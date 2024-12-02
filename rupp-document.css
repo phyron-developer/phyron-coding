@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    outline: none;
+    list-style: none;
+    color: white;
+}
+
+#welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+    font-size: 2em;
+    animation: fadeIn 1s ease-in-out, fadeOut 1s ease-in-out 2s forwards;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+#mainContent{
+    display: none;
+}
+
+
+.container{
+    width: 100%;
+    /* background: rgb(255, 255, 255); */
+    display: flex;
+    justify-content: space-between;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+.left-box{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    height: 100vh;
+    padding: 20px 20px;
+    width: 39%;
+    background-color: rgba(32, 32, 32, 0.802);
+}
+.left-box h2{
+    margin-top: 70px;
+}
+.left-box2{
+    flex-wrap: wrap;
+    margin-top:30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lbox{
+    cursor: pointer;
+    border-radius: 15px;
+    width: 47%;
+    padding: 15px 15px;
+    background-color: rgba(58, 65, 95, 0.599);
+}
+.lbox-icon h5{
+    font-size: 17px;
+}
+.lbox-icon{
+    display: flex;
+    justify-content: space-between;
+}
+.lbox-under{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.right-box{
+    margin-left: 580px;
+    overflow-y: auto;
+    padding: 15px 15px;
+    width: 59%;
+    /* background: gray; */
+}
+.C-programming{
+    border: 1px solid gray;
+    padding: 10px 20px;
+    background-color: black;
+}
